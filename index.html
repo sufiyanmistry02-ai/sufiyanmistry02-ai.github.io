@@ -315,11 +315,16 @@ h2{font-size:clamp(2.4rem,6vw,4rem);margin-bottom:.4rem}
 .board .open::before{content:"";display:inline-block;width:9px;height:9px;margin-right:.5rem;border-radius:50%;background:#3ddc97}
 .contacts{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem;position:relative}
 @media (min-width:720px){.contacts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1040px){.contacts{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .ct{display:flex;align-items:center;gap:1rem;padding:1.1rem 1.3rem;border:1px solid var(--line);border-radius:16px;background:rgba(18,40,90,.6);min-height:76px;transition:transform .25s var(--ease),border-color .25s,background .25s}
 .ct:hover{transform:translateY(-4px);border-color:var(--blue-hi);background:rgba(31,143,255,.15)}
 .ico{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:12px;background:var(--blue);font-family:var(--fh);font-weight:700;font-size:1.3rem}
 .ct b{display:block;font-family:var(--fh);font-size:1.5rem;font-weight:600;line-height:1.1}
 .ct small{color:var(--sky);font-size:.85rem;word-break:break-all}
+.ico svg{width:24px;height:24px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ct.wa .ico{background:#1fa855}
+.ct.wa .code{color:#3ddc97}
+@media (max-width:430px){.code{display:none}}
 .code{margin-left:auto;font-style:normal;font-family:var(--fh);font-weight:600;font-size:1.05rem;letter-spacing:.18em;color:var(--blue-hi);padding-left:.6rem}
 footer{background:var(--deep);color:var(--sky);padding:1.6rem 0 calc(1.6rem + env(safe-area-inset-bottom,0));font-size:.9rem}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.5rem}
@@ -712,6 +717,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
       <a class="ct" href="https://www.linkedin.com/in/mistry-ms-a8a43b193/" target="_blank" rel="noopener noreferrer"><span class="ico">in</span><span><b>LinkedIn</b><small>Connect with me</small></span><em class="code">LIN</em></a>
       <a class="ct" href="https://github.com/sufiyanmistry02-ai" target="_blank" rel="noopener noreferrer"><span class="ico">&lt;/&gt;</span><span><b>GitHub</b><small>See my code</small></span><em class="code">GIT</em></a>
       <a class="ct" id="mailLink" href="mailto:sufiyanmistry02@gmail.com"><span class="ico">@</span><span><b>Email</b><small>sufiyanmistry02@gmail.com</small></span><em class="code">MAIL</em></a>
+      <a class="ct" href="tel:+31610382886"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg></span><span><b>Phone</b><small>+31 6 10382886</small></span><em class="code">TEL</em></a>
+      <a class="ct wa" href="https://wa.me/31610382886" target="_blank" rel="noopener noreferrer"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.4 8.4 0 01-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.4 8.4 0 013.8-.9h.5a8.5 8.5 0 018 8v.5z"/></svg></span><span><b>WhatsApp</b><small>Message me directly</small></span><em class="code">WA</em></a>
       <a class="ct" href="assets/cv/CV-M-S-Mistry.pdf" download><span class="ico">CV</span><span><b>CV</b><small>Download PDF</small></span><em class="code">PDF</em></a>
     </div>
   </div>
